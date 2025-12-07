@@ -1,8 +1,3 @@
-Claro! Aqui está um **README.md** pronto, claro e profissional, ideal para GitHub.
-Se quiser, posso ajustar para outro estilo (mais formal, mais técnico ou mais simples).
-
----
-
 # 📱 PWA GeoWeather
 
 Aplicação **PWA (Progressive Web App)** desenvolvida em HTML, CSS e JavaScript, que utiliza **geolocalização** do dispositivo e consome uma **API pública de clima** (Open-Meteo).
@@ -58,7 +53,7 @@ Funciona no navegador, pode ser **instalada no celular ou computador** e oferece
 1. Baixe ou clone este repositório
 
    ```
-   git clone [https://github.com/seu-usuario/seu-repo.git](https://github.com/EdmaelBarreto/GeoWeather.git)
+   https://github.com/EdmaelBarreto/GeoWeather.git
    ```
 
 2. Abra a pasta no **VSCode**
@@ -140,11 +135,3 @@ Este projeto está sob a licença **MIT** — livre para uso e modificação.
 
 ---
 
-Se quiser, posso também criar:
-
-✅ Versão em inglês
-✅ Badges (shields.io) para deixar o README mais bonito
-✅ GIF animado mostrando a aplicação
-✅ Link para deploy (GitHub Pages)
-
-Posso gerar tudo isso para você. Quer adicionar algo?

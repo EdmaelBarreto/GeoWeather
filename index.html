@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PWA GeoWeather — Exemplo</title>
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Manifesto PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Ícone (fallback) -->
+  <link rel="icon" href="icons/icon-192.png">
+</head>
+<body>
+  <main class="container">
+    <h1>PWA GeoWeather</h1>
+    <p>Aplicação exemplo: usa geolocalização e consome API pública de clima.</p>
+
+    <div id="status">Clique no botão para obter a sua localização e clima atual.</div>
+
+    <div class="controls">
+      <button id="btn-get">Obter localização & clima</button>
+      <button id="btn-refresh" disabled>Atualizar</button>
+    </div>
+
+    <section id="result" class="card hidden">
+      <h2>Dados</h2>
+      <p><strong>Coordenadas:</strong> <span id="coords">—</span></p>
+      <p><strong>Temperatura (°C):</strong> <span id="temp">—</span></p>
+      <p><strong>Vento (m/s):</strong> <span id="wind">—</span></p>
+      <p><strong>Horário (UTC):</strong> <span id="time">—</span></p>
+    </section>
+
+    <footer>
+      <small>Desenvolvido como PWA de exemplo. Funciona offline para a interface básica.</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+
+  <script>
+    // Registrar o service worker (se suportado)
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('Service Worker registrado:', reg.scope))
+        .catch(err => console.warn('Erro ao registrar SW:', err));
+    } else {
+      console.warn('Service Worker não suportado neste navegador.');
+    }
+  </script>
+</body>
+</html>
